@@ -1,0 +1,39 @@
+{
+    "name": "codewithdiki/laravel-moota-transaction",
+    "description": "Unofficial Moota Transaction helper package for laravel",
+    "version" : "0.1",
+    "keywords": [
+        "codewithdiki",
+        "laravel-moota-transaction"
+    ],
+    "homepage": "https://github.com/codewithdiki/laravel-moota-transaction",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Diki Akbar",
+            "email": "diki.akbar1304@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "spatie/laravel-package-tools": "*",
+        "spatie/data-transfer-object": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codewithdiki\\LaravelMootaTransaction\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codewithdiki\\LaravelMootaTransaction\\LaravelMootaTransactionServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMootaTransaction": "Codewithdiki\\LaravelMootaTransaction\\Facades\\LaravelMootaTransaction"
+            }
+        }
+    }
+}
